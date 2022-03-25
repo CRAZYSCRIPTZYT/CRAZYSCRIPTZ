@@ -1,0 +1,45 @@
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextButton = Instance.new("TextButton")
+local Frame_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(136, 28, 225)
+Frame.Position = UDim2.new(0.331858307, 0, 0.316120893, 0)
+Frame.Size = UDim2.new(0, 275, 0, 388)
+Frame.Active = true
+Frame.Draggable = true
+
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(25, 173, 25)
+TextButton.Position = UDim2.new(0.13454546, 0, 0.252577305, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 192)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "CLICK"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 69.000
+TextButton.MouseButton1Down:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+end)
+
+
+
+Frame_2.Parent = ScreenGui
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.Position = UDim2.new(0.331858397, 0, 0.316120893, 0)
+Frame_2.Size = UDim2.new(0, 274, 0, 72)
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 149, 29)
+TextLabel.Size = UDim2.new(0, 274, 0, 72)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "CRAZY SCRIPTZ"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 50.000
